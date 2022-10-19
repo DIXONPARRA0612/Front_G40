@@ -7,6 +7,7 @@ function getCategoria(){
         datatype:"JSON",
         success:function(respuesta){
             pintarCategoria(respuesta);
+        console.log(respuesta);
         }
     });
 }
@@ -22,7 +23,7 @@ function postCategoria(){
         };
         
         $.ajax({
-            url:"http://192.18.155.115:8080/api/Category/save",
+            url:"http://192.18.150.66:8080/api/Category/save",
             type:"POST",
             datatype:"JSON",
             contentType:"application/json; charset=utf-8",

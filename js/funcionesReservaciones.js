@@ -2,7 +2,7 @@
 
 function getReservaciones(){
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/all",
+        url:"http://192.18.150.66:8080/api/Reservation/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
