@@ -20,7 +20,7 @@ function postCliente(){
     };
     
     $.ajax({
-        url:"http://localhost:8080/api/Client/save",
+        url:"http://192.18.150.66:8080/api/Client/save",
         type:"POST",
         datatype:"JSON",
         contentType:"application/json; charset=utf-8",

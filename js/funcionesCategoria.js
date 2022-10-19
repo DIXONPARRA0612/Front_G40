@@ -53,7 +53,7 @@ function putCategoria(idBotonActualizar){
     };
     
     $.ajax({
-        url:"http://192.18.155.115:8080/api/Category/update",
+        url:"http://192.18.150.66:8080/api/Category/update",
         type:"PUT",
         datatype:"JSON",
         contentType:"application/json",
@@ -83,7 +83,7 @@ function deleteCategoria(idBotonBorrar){
                 id:idBotonBorrar
             };
             $.ajax({
-                url:"http://192.18.155.115:8080/api/Category/"+ idBotonBorrar,
+                url:"http://192.18.150.66:8080/api/Category/"+ idBotonBorrar,
                 type:"DELETE",
                 datatype:"JSON",
                 data: JSON.stringify(myData),

@@ -27,7 +27,7 @@ function getFechas(){
     let dato2= $("#startDate2").val();
     
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/report-dates/"+dato1+"/"+dato2,
+        url:"http://192.18.150.66:8080/api/Reservation/report-dates/"+dato1+"/"+dato2,
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){

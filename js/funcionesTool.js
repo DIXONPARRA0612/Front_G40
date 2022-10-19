@@ -30,7 +30,7 @@ function postTool(){
     console.log(cajas);
     
     $.ajax({
-        url:"http://localhost:8080/api/Tool/save",
+        url:"http://192.18.150.66:8080/api/Tool/save",
         type:"POST",
         datatype:"JSON",
         contentType:"application/json; charset=utf-8",
@@ -61,7 +61,7 @@ function putTool(idBotonActualizar){
     };
     
     $.ajax({
-        url:"http://localhost:8080/api/Tool/update",
+        url:"http://192.18.150.66:8080/api/Tool/update",
         type:"PUT",
         datatype:"JSON",
         contentType:"application/json",
@@ -92,7 +92,7 @@ function deleteTool( idBotonBorrar){
                 id:idBotonBorrar
             };
             $.ajax({
-                url:"http://localhost:8080/api/Tool/"+ idBotonBorrar,
+                url:"http://192.18.150.66:8080/api/Tool/"+ idBotonBorrar,
                 type:"DELETE",
                 datatype:"JSON",
                 data: JSON.stringify(myData),
@@ -121,7 +121,7 @@ function deleteTool( idBotonBorrar){
 function getTool_Category(){
     //console.log("hola desde tool")
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://192.18.150.66:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){

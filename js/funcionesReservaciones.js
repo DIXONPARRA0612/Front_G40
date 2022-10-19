@@ -45,7 +45,7 @@ function postReservaciones(){
     console.log(cajas);
     
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/save",
+        url:"http://192.18.150.66:8080/api/Reservation/save",
         type:"POST",
         datatype:"JSON",
         contentType:"application/json; charset=utf-8",
@@ -66,7 +66,7 @@ function deleteReservaciones(){
 }
 function getTool_Reservaciones(){
     $.ajax({
-        url:"http://localhost:8080/api/Tool/all",
+        url:"http://192.18.150.66:8080/api/Tool/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -81,7 +81,7 @@ function getTool_Reservaciones(){
 }
 function getClient_Reservaciones(){
     $.ajax({
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://192.18.150.66:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
